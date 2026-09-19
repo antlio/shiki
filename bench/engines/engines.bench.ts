@@ -42,7 +42,7 @@ for (const lang of langs) {
   it(lang, async ({ bench }) => {
     const code = samples[langs.indexOf(lang)]
 
-    await it.compare(
+    await bench.compare(
       bench('js', () => {
         shikiJs.codeToTokensBase(code, { lang, theme: 'vitesse-dark' })
       }),

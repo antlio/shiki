@@ -50,6 +50,12 @@ export default antfu(
     },
   },
   {
+    files: ['bench/**/*.bench.ts'],
+    rules: {
+      'test/consistent-test-it': 'off',
+    },
+  },
+  {
     files: [
       'packages/stream/**/*.ts',
       'packages/stream/**/*.tsx',

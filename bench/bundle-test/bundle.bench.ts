@@ -24,7 +24,7 @@ function notify() {
 `
 
 it('bundle', async ({ bench }) => {
-  await it.compare(
+  await bench.compare(
     bench('js-precompiled', async () => {
       await highlightA(code)
     }),
